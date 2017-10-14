@@ -1,0 +1,142 @@
+// class version 51.0 (51)
+// access flags 0x21
+public class com/josecambronero/IntegerTagExamples implements edu/columbia/cs/psl/phosphor/struct/TaintedWithIntTag  {
+
+
+  @Ledu/columbia/cs/psl/phosphor/runtime/TaintInstrumented;() // invisible
+  // compiled from: IntegerTagExamples.java
+
+  // access flags 0x1018
+  final static synthetic Z $assertionsDisabled
+
+  // access flags 0x1
+  public <init>()V
+   L0
+   L1
+   L2
+   L3
+    LINENUMBER 16 L3
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L4
+    LOCALVARIABLE this Lcom/josecambronero/IntegerTagExamples; L3 L4 0
+   L5
+    MAXSTACK = 101
+    MAXLOCALS = 1
+
+  // access flags 0x9
+  public static identity$$PHOSPHORTAGGED(IILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+   L0
+   L1
+   L2
+   L3
+    LINENUMBER 20 L3
+    ILOAD 0
+    ILOAD 1
+    ALOAD 2
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ALOAD 2
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    ALOAD 2
+    ARETURN
+   L4
+    LOCALVARIABLE x_TAINT I L3 L4 0
+    LOCALVARIABLE x I L3 L4 1
+    LOCALVARIABLE PHOSPHORPREALLOCRETURNHAHA Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag; L3 L4 2
+   L5
+    MAXSTACK = 101
+    MAXLOCALS = 3
+
+  // access flags 0x9
+  public static zero$$PHOSPHORTAGGED(IILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+   L0
+   L1
+   L2
+   L3
+    LINENUMBER 24 L3
+    ICONST_0
+    ICONST_0
+    ALOAD 2
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ALOAD 2
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    ALOAD 2
+    ARETURN
+   L4
+    LOCALVARIABLE x_TAINT I L3 L4 0
+    LOCALVARIABLE x I L3 L4 1
+    LOCALVARIABLE PHOSPHORPREALLOCRETURNHAHA Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag; L3 L4 2
+   L5
+    MAXSTACK = 101
+    MAXLOCALS = 3
+
+  // access flags 0x9
+  // signature (I)Ljava/util/List<Ljava/lang/Integer;>;
+  // declaration: java.util.List<java.lang.Integer> getTaintSources$$PHOSPHORTAGGED(int)
+  public static getTaintSources$$PHOSPHORTAGGED(II)Ljava/util/List;
+   L0
+   L1
+   L2
+    NEW edu/columbia/cs/psl/phosphor/struct/TaintedCharWithIntTag
+    DUP
+    INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedCharWithIntTag.<init> ()V
+    ASTORE 2
+   L3
+    NEW edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag
+    DUP
+    INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.<init> ()V
+    ASTORE 3
+   L4
+    NEW edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithIntTag
+    DUP
+    INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithIntTag.<init> ()V
+    ASTORE 4
+   L5
+    NEW edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag
+    DUP
+    INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag.<init> ()V
+    ASTORE 5
+   L6
+   L7
+    LINENUMBER 28 L7
+    ILOAD 0
+    ILOAD 1
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/RuntimeBoxUnboxPropogator.toBinaryString$$PHOSPHORTAGGED (II)Ljava/lang/String;
+    INVOKEVIRTUAL java/lang/String.toCharArray$$PHOSPHORTAGGED ()Ledu/columbia/cs/psl/phosphor/struct/LazyCharArrayIntTags;
+    DUP
+    IFNULL L8
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/LazyCharArrayIntTags.val : [C
+    GOTO L9
+   L8
+   FRAME FULL [I I edu/columbia/cs/psl/phosphor/struct/TaintedCharWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag] [edu/columbia/cs/psl/phosphor/struct/LazyCharArrayIntTags]
+    CHECKCAST [C
+   L9
+   FRAME FULL [I I edu/columbia/cs/psl/phosphor/struct/TaintedCharWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag] [[C]
+    ASTORE 6
+   L10
+    LINENUMBER 29 L10
+    NEW java/util/ArrayList
+    DUP
+    INVOKESPECIAL java/util/ArrayList.<init> ()V
+    ASTORE 7
+   L11
+    LINENUMBER 30 L11
+    ICONST_0
+    ICONST_0
+   L12
+    ISTORE 8
+    ISTORE 9
+   L13
+   FRAME FULL [I I edu/columbia/cs/psl/phosphor/struct/TaintedCharWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithIntTag edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag [C java/util/List I I] []
+    ILOAD 8
+    ALOAD 6
+    ARRAYLENGTH
+   L14
+    SWAP
+    ISTORE 10
+    DUP2_X1

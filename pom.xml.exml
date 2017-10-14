@@ -8,6 +8,10 @@
     <name>BBPhosphor</name>
     <url>http://maven.apache.org</url>
 
+    <modules>
+        <module>phosphor/Phosphor</module>
+    </modules>
+
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <testSourceDirectory>src/test/java</testSourceDirectory>
@@ -40,15 +44,18 @@
             <version>4.11</version>
             <!--<scope>test</scope>-->
         </dependency>
-        <dependency>
-            <groupId>edu.columbia.cs.psl.phosphor</groupId>
-            <artifactId>Phosphor</artifactId>
-            <version>${phosphor.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>edu.columbia.cs.psl.phosphor</groupId>-->
+            <!--<artifactId>Phosphor</artifactId>-->
+            <!--<version>${phosphor.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-all</artifactId>
             <version>5.0.3</version>
         </dependency>
     </dependencies>
+
+
 </project>
+
