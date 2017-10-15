@@ -1,6 +1,12 @@
 *.class
-XPhosphor.iml
+BBPhosphor.iml
 target/
 .idea/
 test.png
 phosphor/
+debug/
+debug-preinst/
+
+error
+lassClass.txt
+output
