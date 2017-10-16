@@ -35,14 +35,14 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
     }
 
     public void stackOp(int opcode, MethodVisitor mv, LocalVariableManager lvs, TaintPassingMV adapter) {
-        DebugME("STACKOP TEST");
+        //DebugME("STACKOP TEST");
         super.stackOp(opcode, mv, lvs, adapter);
     }
 
     public void jumpOp(int opcode, int branchStarting, Label label, MethodVisitor mv, LocalVariableManager lvs, TaintPassingMV ta) {
-        DebugME("Entering jumpOp.");
-        //if ((Configuration.IMPLICIT_TRACKING || Configuration.IMPLICIT_LIGHT_TRACKING) && !Configuration.WITHOUT_PROPOGATION) {
-        if(true) {
+        DebugME("Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = " + Configuration.WITH_TAGS_FOR_JUMPS + "opcode = " + opcode);
+        if ((Configuration.IMPLICIT_TRACKING || Configuration.IMPLICIT_LIGHT_TRACKING) && !Configuration.WITHOUT_PROPOGATION) {
+        //if(true) {
             switch (opcode) {
                 case Opcodes.IFEQ:
                 case Opcodes.IFNE:
@@ -58,6 +58,8 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                     DebugME("After first lvs.getIdxOfMasterControlLV, value: " + lvs.getIdxOfMasterControlLV());
 
                     mv.visitInsn(SWAP);
+                    //mv.visitInsn(DUP); // the taint object
+                    //call my function to store the taint object.
                     mv.visitVarInsn(ALOAD, ta.taintTagsLoggedAtJumps[branchStarting]);
                     mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(ControlTaintTagStack.class), "push", "(" + Configuration.TAINT_TAG_DESC + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;"+")"+"Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;", false);
                     mv.visitVarInsn(ASTORE, ta.taintTagsLoggedAtJumps[branchStarting]);
@@ -74,6 +76,8 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                 case Opcodes.IF_ICMPGE:
                 case Opcodes.IF_ICMPGT:
                 case Opcodes.IF_ICMPLE:
+                    DebugME("Before SECOND lvs.getIdxOfMasterControlLV, value: " + lvs.getIdxOfMasterControlLV());
+
                     //T V T V
                     int tmp = lvs.getTmpLV(Type.INT_TYPE);
                     //T V T V
@@ -85,7 +89,6 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                     mv.visitInsn(POP2);
                     //V V T
                     //FIXME mv.visitVarInsn(ALOAD, lvs.idxOfMasterControlLV);
-                    DebugME("Before SECOND lvs.getIdxOfMasterControlLV, value: " + lvs.getIdxOfMasterControlLV());
                     mv.visitVarInsn(ALOAD, lvs.getIdxOfMasterControlLV());
                     DebugME("after SECOND lvs.getIdxOfMasterControlLV, value: " + lvs.getIdxOfMasterControlLV());
 

@@ -1,0 +1,372 @@
+// class version 49.0 (49)
+// access flags 0x21
+public class edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test implements edu/columbia/cs/psl/phosphor/struct/TaintedWithIntTag  {
+
+
+  @Ledu/columbia/cs/psl/phosphor/runtime/TaintInstrumented;() // invisible
+  // compiled from: App.java
+  // access flags 0x9
+  public static INNERCLASS edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test edu/ucdavis/cs/cyberlab/BBPhosphorTests/App Test
+
+  // access flags 0x1
+  public I x
+
+  // access flags 0x1
+  public I y
+
+  // access flags 0x1
+  public <init>()V
+   L0
+   L1
+   L2
+   L3
+    LINENUMBER 15 L3
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+   L4
+    LINENUMBER 17 L4
+    RETURN
+   L5
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L3 L5 0
+   L6
+    MAXSTACK = 101
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public <init>(IIIILedu/columbia/cs/psl/phosphor/runtime/TaintSentinel;)V
+   L0
+   L1
+   L2
+   L3
+    LINENUMBER 19 L3
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+   L4
+    LINENUMBER 20 L4
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    DUP2_X1
+    POP2
+    DUP_X2
+    SWAP
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.x : I
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.xPHOSPHOR_TAG : I
+   L5
+    LINENUMBER 21 L5
+    ALOAD 0
+    ILOAD 3
+    ILOAD 4
+    DUP2_X1
+    POP2
+    DUP_X2
+    SWAP
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.y : I
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.yPHOSPHOR_TAG : I
+   L6
+    LINENUMBER 22 L6
+    RETURN
+   L7
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L3 L7 0
+    LOCALVARIABLE x_TAINT I L3 L7 1
+    LOCALVARIABLE x I L3 L7 2
+    LOCALVARIABLE y_TAINT I L3 L7 3
+    LOCALVARIABLE y I L3 L7 4
+    LOCALVARIABLE TAINT_STUFF_TO_IGNORE_HAHA Ljava/lang/Object; L3 L7 5
+   L8
+    MAXSTACK = 102
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+   L0
+   L1
+   L2
+   L3
+    LINENUMBER 25 L3
+    ALOAD 0
+    DUP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.xPHOSPHOR_TAG : I
+    SWAP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.x : I
+    IFLE L4
+   L5
+   L6
+    LINENUMBER 26 L6
+    ICONST_0
+    BIPUSH 10
+   L7
+    ISTORE 2
+    ISTORE 3
+   L8
+    LINENUMBER 27 L8
+    ALOAD 0
+    ILOAD 3
+    ILOAD 2
+    ALOAD 0
+    DUP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.xPHOSPHOR_TAG : I
+    SWAP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.x : I
+   L9
+    ISTORE 4
+    SWAP
+    ILOAD 4
+   L10
+    IADD
+    DUP_X2
+    POP
+    IOR
+    SWAP
+    DUP2_X1
+    POP2
+    DUP_X2
+    SWAP
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.y : I
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.yPHOSPHOR_TAG : I
+   L11
+    LINENUMBER 28 L11
+    ALOAD 0
+    DUP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.yPHOSPHOR_TAG : I
+    SWAP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.y : I
+    IFLE L4
+   L12
+   L13
+    LINENUMBER 29 L13
+    ICONST_0
+    BIPUSH 20
+   L14
+    ISTORE 5
+    ISTORE 6
+   L15
+    LINENUMBER 30 L15
+    ALOAD 0
+    ILOAD 6
+    ILOAD 5
+    ALOAD 0
+    DUP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.xPHOSPHOR_TAG : I
+    SWAP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.x : I
+    ISTORE 4
+    SWAP
+    ILOAD 4
+   L16
+    IADD
+    DUP_X2
+    POP
+    IOR
+    SWAP
+    DUP2_X1
+    POP2
+    DUP_X2
+    SWAP
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.y : I
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.yPHOSPHOR_TAG : I
+   L4
+    LINENUMBER 34 L4
+    ALOAD 0
+    DUP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.yPHOSPHOR_TAG : I
+    SWAP
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.y : I
+    ALOAD 1
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ALOAD 1
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    ALOAD 1
+    ARETURN
+   L17
+    LOCALVARIABLE zz I L15 L4 5
+   L18
+    LOCALVARIABLE phosphorShadowLVFor5XX2 I L14 L18 6
+    LOCALVARIABLE phosphorShadowLVFor2XX0 I L7 L18 3
+    LOCALVARIABLE phosphorShadowLV1 I L9 L16 4
+    LOCALVARIABLE z I L8 L4 2
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L3 L17 0
+    MAXSTACK = 103
+    MAXLOCALS = 7
+
+  // access flags 0x18
+  final static J serialVersionUID = -8003213438227156034
+
+  // access flags 0x1
+  public I PHOSPHOR_TAG = 0
+
+  // access flags 0x1
+  public I xPHOSPHOR_TAG
+
+  // access flags 0x1
+  public I yPHOSPHOR_TAG
+
+  // access flags 0x9
+  public static I serialVersionUIDPHOSPHOR_TAG = 0
+
+  // access flags 0x1
+  public equals(Ljava/lang/Object;)Z
+   L0
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL java/lang/Object.equals (Ljava/lang/Object;)Z
+   L1
+    IRETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L0 L1 0
+    LOCALVARIABLE other Ljava/lang/Object; L0 L1 1
+    MAXSTACK = 0
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public hashCode()I
+   L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.hashCode ()I
+   L1
+    IRETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L0 L1 0
+    MAXSTACK = 0
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public getPHOSPHOR_TAG()I
+    ALOAD 0
+    GETFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.PHOSPHOR_TAG : I
+    IRETURN
+    MAXSTACK = 0
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public setPHOSPHOR_TAG(I)V
+    ALOAD 0
+    ILOAD 1
+    PUTFIELD edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.PHOSPHOR_TAG : I
+    RETURN
+    MAXSTACK = 0
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public <init>(II)V
+   L0
+   L1
+    LINENUMBER 0 L1
+    ALOAD 0
+    ICONST_0
+    ILOAD 1
+    ICONST_0
+    ILOAD 2
+    ACONST_NULL
+    INVOKESPECIAL edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.<init> (IIIILedu/columbia/cs/psl/phosphor/runtime/TaintSentinel;)V
+   L2
+    RETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L1 L2 0
+    LOCALVARIABLE x I L1 L2 1
+    LOCALVARIABLE y I L1 L2 2
+   L3
+    MAXSTACK = 6
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public add()I
+   L0
+   L1
+    NEW edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag
+    DUP
+    INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.<init> ()V
+    ASTORE 1
+   L2
+    LINENUMBER 0 L2
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.add$$PHOSPHORTAGGED (Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+   L3
+    IRETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L2 L3 0
+   L4
+    LOCALVARIABLE phosphorReturnPreAlloc0 Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag; L1 L4 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public equals$$PHOSPHORTAGGED(Ljava/lang/Object;Ledu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag;
+   L0
+   L1
+    ALOAD 0
+    ALOAD 1
+    DUP
+    DUP
+    INSTANCEOF [Ledu/columbia/cs/psl/phosphor/struct/LazyArrayIntTags;
+    SWAP
+    INSTANCEOF edu/columbia/cs/psl/phosphor/struct/LazyArrayIntTags
+    IOR
+    IFEQ L2
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/struct/multid/MultiDTaintedArrayWithIntTag.unboxRaw (Ljava/lang/Object;)Ljava/lang/Object;
+   L2
+   FRAME FULL [edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test java/lang/Object edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag] [edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test java/lang/Object]
+    INVOKESPECIAL edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.equals (Ljava/lang/Object;)Z
+    ALOAD 2
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag.val : Z
+    ALOAD 2
+    ICONST_0
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag.taint : I
+    ALOAD 2
+   L3
+    ARETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L1 L3 0
+    LOCALVARIABLE phosphorNativeWrapArg1 Ljava/lang/Object; L1 L3 1
+    LOCALVARIABLE phosphorReturnHolder Ledu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithIntTag; L1 L3 2
+   L4
+    MAXSTACK = 4
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public hashCode$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+   L0
+   L1
+    ALOAD 0
+    INVOKESPECIAL edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.hashCode ()I
+    ALOAD 1
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ALOAD 1
+    ICONST_0
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    ALOAD 1
+   L2
+    ARETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L1 L2 0
+    LOCALVARIABLE phosphorReturnHolder Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag; L1 L2 1
+   L3
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public getClass$$PHOSPHORTAGGED()Ljava/lang/Class;
+   L0
+   L1
+    ALOAD 0
+    INVOKESPECIAL edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.getClass ()Ljava/lang/Class;
+   L2
+    ARETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L1 L2 0
+   L3
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public toString$$PHOSPHORTAGGED()Ljava/lang/String;
+   L0
+   L1
+    ALOAD 0
+    INVOKESPECIAL edu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test.toString ()Ljava/lang/String;
+   L2
+    ARETURN
+    LOCALVARIABLE this Ledu/ucdavis/cs/cyberlab/BBPhosphorTests/App$Test; L1 L2 0
+   L3
+    MAXSTACK = 1
+    MAXLOCALS = 1
+}

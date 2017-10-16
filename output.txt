@@ -1,0 +1,167 @@
+mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building BBPhosphor 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ BBPhosphor ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ BBPhosphor ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ BBPhosphor ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ BBPhosphor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ BBPhosphor ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ BBPhosphor ---
+[INFO] Building jar: /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/target/BBPhosphor-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.923 s
+[INFO] Finished at: 2017-10-14T14:31:11-07:00
+[INFO] Final Memory: 16M/274M
+[INFO] ------------------------------------------------------------------------
+../phosphor/Phosphor/target/jre-inst-int/bin/java -Xbootclasspath/a:../phosphor/Phosphor/target/Phosphor-0.0.3-SNAPSHOT.jar -javaagent:../BBPhosphor/target/BBPhosphor-1.0-SNAPSHOT.jar -cp ../phosphor-examples/target/phosphor-examples-1.0-SNAPSHOT.jar -ea com.josecambronero.IntegerTagExamples
+DEBUG hello from premain of XPhosphor!
+DEBUG Input args: null
+DEBUG Configuration.with_tags_for_jumps: true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+DEBUG Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = true
+Saving com/josecambronero/IntegerTagExamples
+Makefile:11: recipe for target 'all' failed
+mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building BBPhosphor 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ BBPhosphor ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ BBPhosphor ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ BBPhosphor ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ BBPhosphor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ BBPhosphor ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ BBPhosphor ---
+[INFO] Building jar: /home/huang/Desktop/Project/Fuzz/phosphor_testing/BBPhosphor/target/BBPhosphor-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.862 s
+[INFO] Finished at: 2017-10-14T14:36:43-07:00
+[INFO] Final Memory: 16M/271M
+[INFO] ------------------------------------------------------------------------
+../phosphor/Phosphor/target/jre-inst-int/bin/java -Xbootclasspath/a:../phosphor/Phosphor/target/Phosphor-0.0.3-SNAPSHOT.jar -javaagent:../BBPhosphor/target/BBPhosphor-1.0-SNAPSHOT.jar -cp ../phosphor-examples/target/phosphor-examples-1.0-SNAPSHOT.jar -ea com.josecambronero.IntegerTagExamples
+DEBUG hello from premain of XPhosphor!
+DEBUG Input args: null
+DEBUG Configuration.with_tags_for_jumps: true
+Makefile:11: recipe for target 'all' failed

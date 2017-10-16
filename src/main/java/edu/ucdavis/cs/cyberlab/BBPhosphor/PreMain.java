@@ -2,6 +2,7 @@ package edu.ucdavis.cs.cyberlab.BBPhosphor;
 
 import java.lang.instrument.Instrumentation;
 import edu.columbia.cs.psl.phosphor.Configuration;
+import edu.columbia.cs.psl.phosphor.instrumenter.DataAndControlFlowTagFactory;
 import edu.columbia.cs.psl.phosphor.struct.ControlTaintTagStack;
 
 import static edu.ucdavis.cs.cyberlab.BBPhosphor.util.XDebug.DebugME;
@@ -20,16 +21,14 @@ public class PreMain {
     }
 
     public static void premain(String args, Instrumentation inst) {
-        DebugME("hello from premain of XPhosphor!");
+        DebugME("hello from premain of BBPhosphor!");
         DebugME("Input args: " + args);
 
-
-        //Configuration.WITH_TAGS_FOR_JUMPS = true;
-        Configuration.taintTagFactory = new XDataAndControlFlowTagFactory();
-        edu.columbia.cs.psl.phosphor.PreMain.premain(args, inst);
-
+        Configuration.WITH_TAGS_FOR_JUMPS = true;
         DebugME("Configuration.with_tags_for_jumps: " + Configuration.WITH_TAGS_FOR_JUMPS);
 
-    }
 
+        Configuration.taintTagFactory = new DataAndControlFlowTagFactory();
+        edu.columbia.cs.psl.phosphor.PreMain.premain(args, inst);
+    }
 }
