@@ -10,9 +10,7 @@ EXAMPLEJAR=../phosphor-examples/target/phosphor-examples-1.0-SNAPSHOT.jar
 .PHONY: test ${TESTJAR} 
 
 
-target: ${BBPHOS} ${PHOSPHOR}
-
-all: implicit normal test
+all: implicit normal testbb
 
 ${BBPHOS}:
 	mvn package
