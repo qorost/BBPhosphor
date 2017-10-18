@@ -41,7 +41,8 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
 
     public void jumpOp(int opcode, int branchStarting, Label label, MethodVisitor mv, LocalVariableManager lvs, TaintPassingMV ta) {
         DebugME("Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = " + Configuration.WITH_TAGS_FOR_JUMPS + "opcode = " + opcode);
-        if ((Configuration.IMPLICIT_TRACKING || Configuration.IMPLICIT_LIGHT_TRACKING) && !Configuration.WITHOUT_PROPOGATION) {
+        //if ((Configuration.IMPLICIT_TRACKING || Configuration.IMPLICIT_LIGHT_TRACKING) && !Configuration.WITHOUT_PROPOGATION) {
+        if(Configuration.WITH_TAGS_FOR_JUMPS) {
         //if(true) {
             switch (opcode) {
                 case Opcodes.IFEQ:

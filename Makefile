@@ -1,5 +1,5 @@
 #The Java file that has been instrumented before
-JAVA=../phosphor/Phosphor/target/jre-inst-int/bin/java
+JAVA=../phosphor/Phosphor/target/jre-inst-obj/bin/java
 #The phosphor runnable 
 PHOSPHOR=../phosphor/Phosphor/target/Phosphor-0.0.3-SNAPSHOT.jar
 #The BBPhosphor jar file
@@ -26,11 +26,11 @@ clean:
 
 implicit: ${BBPHOS} ${PHOSPHOR} ${EXAMPLEJAR}
 	echo "enable lightImplicit for phosphor-examples"
-	${JAVA} -Xbootclasspath/a:${PHOSPHOR} -javaagent:${PHOSPHOR}=lightImplicit -cp ${EXAMPLEJAR} -ea com.josecambronero.IntegerTagExamples
+	${JAVA} -Xbootclasspath/a:${PHOSPHOR} -javaagent:${PHOSPHOR}=lightImplicit -cp ${EXAMPLEJAR} -ea com.josecambronero.ObjectTagExamples
 
 normal: ${BBPHOS} ${PHOSPHOR} ${EXAMPLEJAR}
 	echo "using phosphor in the normal way"
-	${JAVA} -Xbootclasspath/a:${PHOSPHOR} -javaagent:${PHOSPHOR} -cp ${EXAMPLEJAR} -ea com.josecambronero.IntegerTagExamples
+	${JAVA} -Xbootclasspath/a:${PHOSPHOR} -javaagent:${PHOSPHOR} -cp ${EXAMPLEJAR} -ea com.josecambronero.ObjectTagExamples
 
 
 
@@ -47,6 +47,12 @@ ${TESTJAR}:
 testbb: ${TESTJAR} ${PHOSPHOR}
 	echo "running ${TESTJAR} with bbphosphor, WITH_TAGS_FOR_JUMPS turned on"
 	${JAVA} -Xbootclasspath/a:${PHOSPHOR} -javaagent:${BBPHOS} -cp ${TESTJAR} -ea ${TESTCLASS}
+
+
+#testeg: ${TESTJAR} ${PHOSPHOR}
+testeg: 
+	echo "running ${TESTJAR} with bbphosphor, WITH_TAGS_FOR_JUMPS turned on"
+	${JAVA} -Xbootclasspath/a:${PHOSPHOR} -javaagent:${BBPHOS} -cp ${EXAMPLEJAR} -ea com.josecambronero.ObjectTagExamples
 
 
 testphosphor: ${TESTJAR} ${PHOSPHOR}
