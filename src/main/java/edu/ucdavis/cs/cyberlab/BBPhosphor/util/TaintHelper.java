@@ -10,10 +10,17 @@ import edu.columbia.cs.psl.phosphor.runtime.Taint;
 public class TaintHelper {
 
     public static void saveTaint(Object o) {
-        Taint to = TaintUtils.getTaintObj(o);
-        //Taint to = MultiTainter.getTaint(o);
-        assert (to != null);
-        System.out.println(to.toString());
+//        Taint to = TaintUtils.getTaintObj(o);
+//        //Taint to = MultiTainter.getTaint(o);
+//        assert (to != null);
+//        System.out.println(to.toString());
+
+    }
+
+    public static void saveTaintX(Taint x) {
+        //assert (x != null);
+        if(x != null)
+            System.out.println("INSTRUMENTED TAINT result: " + x.toString());
     }
 
     public static void printx(String s) {
