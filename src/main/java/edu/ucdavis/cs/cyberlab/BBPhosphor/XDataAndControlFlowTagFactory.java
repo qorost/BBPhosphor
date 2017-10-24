@@ -51,13 +51,15 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                 case Opcodes.IFGE:
                 case Opcodes.IFGT:
                 case Opcodes.IFLE:
-                    //mv.visitInsn(DUP);//duplicate the object
-                    //mv.visitInsn(POP);
-                    //mv.visitMethodInsn(INVOKESTATIC,Type.getInternalName(TaintHelper.class), "saveTaint", "(Ljava/lang/Object;)V",false);
-                    //mv.visitInsn(POP);
-
+                    //FIXME always failed with this
+                    //Added by huang, to store the taint information.
+                    mv.visitInsn(DUP);//duplicate the object
+                    mv.visitMethodInsn(INVOKESTATIC,Type.getInternalName(TaintHelper.class), "saveTaint", "(Ljava/lang/Object;)V",false);
+                    //This is correct
                     mv.visitLdcInsn("hello i coupied this! branching counting " + Integer.toString(branchStarting));
                     mv.visitMethodInsn(INVOKESTATIC, Type.getInternalName(TaintHelper.class),"printx","(Ljava/lang/String;)V",false);
+
+
                     mv.visitInsn(SWAP);
                     //FIXME mv.visitVarInsn(ALOAD, lvs.idxOfMasterControlLV);
                     DebugME("Before first lvs.getIdxOfMasterControlLV, value: " + lvs.getIdxOfMasterControlLV());

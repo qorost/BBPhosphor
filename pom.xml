@@ -34,6 +34,13 @@
         <phosphor.version>0.0.3-SNAPSHOT</phosphor.version>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.19.0-GA</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

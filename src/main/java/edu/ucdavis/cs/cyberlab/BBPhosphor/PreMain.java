@@ -31,7 +31,7 @@ public class PreMain {
 
         Configuration.taintTagFactory = new XDataAndControlFlowTagFactory();
         edu.columbia.cs.psl.phosphor.PreMain.premain(args, inst);
-        DebugME("Finished with Configuration.with_tags_for_jumps: " + Configuration.WITH_TAGS_FOR_JUMPS);
+        //DebugME("Finished with Configuration.with_tags_for_jumps: " + Configuration.WITH_TAGS_FOR_JUMPS);
 
     }
 }

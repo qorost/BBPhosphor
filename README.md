@@ -26,3 +26,5 @@ Now you can run your test with "make"
 * `make testphosphor`, run the `BBPhosphorTests` with `phosphor`
 * `make testbb`, run the `BBPhosphorTests` with `BBPhosphor`
 
+* `make testeg`, run the `phosphor-examples` with `BBPhosphor`
+
