@@ -16,7 +16,9 @@ import edu.columbia.cs.psl.phosphor.TaintUtils;
 import edu.columbia.cs.psl.phosphor.instrumenter.DataAndControlFlowTagFactory;
 import edu.columbia.cs.psl.phosphor.instrumenter.LocalVariableManager;
 import edu.columbia.cs.psl.phosphor.instrumenter.TaintPassingMV;
+import edu.columbia.cs.psl.phosphor.runtime.MultiTainter;
 import edu.columbia.cs.psl.phosphor.struct.ControlTaintTagStack;
+import edu.ucdavis.cs.cyberlab.BBPhosphor.util.TaintHelper;
 
 import static edu.ucdavis.cs.cyberlab.BBPhosphor.util.XDebug.DebugME;
 
@@ -24,11 +26,11 @@ import static edu.ucdavis.cs.cyberlab.BBPhosphor.util.XDebug.DebugME;
 /**
  * Created by huang on 10/9/17.
  */
-public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory  {
-
+public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory {
 
 
     boolean isIgnoreAcmp;
+
     @Override
     public void instrumentationStarting(String className) {
         isIgnoreAcmp = className.equals("java/io/ObjectOutputStream$HandleTable");
@@ -40,10 +42,8 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
     }
 
     public void jumpOp(int opcode, int branchStarting, Label label, MethodVisitor mv, LocalVariableManager lvs, TaintPassingMV ta) {
-        DebugME("Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = " + Configuration.WITH_TAGS_FOR_JUMPS + "opcode = " + opcode);
-        //if ((Configuration.IMPLICIT_TRACKING || Configuration.IMPLICIT_LIGHT_TRACKING) && !Configuration.WITHOUT_PROPOGATION) {
-        if(Configuration.WITH_TAGS_FOR_JUMPS) {
-        //if(true) {
+        DebugME("Entering jumpOp. Configuration.WITH_TAGS_FOR_JUMPS = " + Configuration.WITH_TAGS_FOR_JUMPS + " opcode = " + opcode);
+        if ((Configuration.IMPLICIT_TRACKING || Configuration.IMPLICIT_LIGHT_TRACKING) && !Configuration.WITHOUT_PROPOGATION) {
             switch (opcode) {
                 case Opcodes.IFEQ:
                 case Opcodes.IFNE:
@@ -51,18 +51,27 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                 case Opcodes.IFGE:
                 case Opcodes.IFGT:
                 case Opcodes.IFLE:
+                    //mv.visitInsn(DUP);//duplicate the object
+                    //mv.visitInsn(POP);
+                    //mv.visitMethodInsn(INVOKESTATIC,Type.getInternalName(TaintHelper.class), "saveTaint", "(Ljava/lang/Object;)V",false);
+                    //mv.visitInsn(POP);
+
+                    mv.visitLdcInsn("hello i coupied this! branching counting " + Integer.toString(branchStarting));
+                    mv.visitMethodInsn(INVOKESTATIC, Type.getInternalName(TaintHelper.class),"printx","(Ljava/lang/String;)V",false);
                     mv.visitInsn(SWAP);
                     //FIXME mv.visitVarInsn(ALOAD, lvs.idxOfMasterControlLV);
                     DebugME("Before first lvs.getIdxOfMasterControlLV, value: " + lvs.getIdxOfMasterControlLV());
-
                     mv.visitVarInsn(ALOAD, lvs.getIdxOfMasterControlLV());
                     DebugME("After first lvs.getIdxOfMasterControlLV, value: " + lvs.getIdxOfMasterControlLV());
-
                     mv.visitInsn(SWAP);
-                    //mv.visitInsn(DUP); // the taint object
+                    //mv.visitInsn(DUP); // the taint object  (Ljava/lang/Object;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+                    //mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(MultiTainter.class),"getTaint","(" + Configuration.TAINT_TAG_DESC + "L",false);
+                    //mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(MultiTainter.class),"getTaint","(Ljava/lang/Object;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;",false);
+                    //mv.visitInsn(POP);
+
                     //call my function to store the taint object.
                     mv.visitVarInsn(ALOAD, ta.taintTagsLoggedAtJumps[branchStarting]);
-                    mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(ControlTaintTagStack.class), "push", "(" + Configuration.TAINT_TAG_DESC + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;"+")"+"Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;", false);
+                    mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(ControlTaintTagStack.class), "push", "(" + Configuration.TAINT_TAG_DESC + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;" + ")" + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;", false);
                     mv.visitVarInsn(ASTORE, ta.taintTagsLoggedAtJumps[branchStarting]);
                     mv.visitJumpInsn(opcode, label);
                     break;
@@ -104,18 +113,17 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                     lvs.freeTmpLV(tmp);
                     //V V C T CT
                     mv.visitVarInsn(ALOAD, ta.taintTagsLoggedAtJumps[branchStarting]);
-                    mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(ControlTaintTagStack.class), "push", "(" + Configuration.TAINT_TAG_DESC + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;"+")"+"Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;", false);
+                    mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(ControlTaintTagStack.class), "push", "(" + Configuration.TAINT_TAG_DESC + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;" + ")" + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;", false);
                     mv.visitVarInsn(ASTORE, ta.taintTagsLoggedAtJumps[branchStarting]);
-                    mv.visitVarInsn(ALOAD, ta.taintTagsLoggedAtJumps[branchStarting+1]);
-                    mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(ControlTaintTagStack.class), "push", "(" + Configuration.TAINT_TAG_DESC + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;"+")"+"Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;", false);
-                    mv.visitVarInsn(ASTORE, ta.taintTagsLoggedAtJumps[branchStarting+1]);
+                    mv.visitVarInsn(ALOAD, ta.taintTagsLoggedAtJumps[branchStarting + 1]);
+                    mv.visitMethodInsn(INVOKEVIRTUAL, Type.getInternalName(ControlTaintTagStack.class), "push", "(" + Configuration.TAINT_TAG_DESC + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;" + ")" + "Ledu/columbia/cs/psl/phosphor/struct/EnqueuedTaint;", false);
+                    mv.visitVarInsn(ASTORE, ta.taintTagsLoggedAtJumps[branchStarting + 1]);
                     mv.visitJumpInsn(opcode, label);
                     break;
                 case Opcodes.IF_ACMPNE:
                 case Opcodes.IF_ACMPEQ:
 
-                    if(!isIgnoreAcmp && Configuration.WITH_UNBOX_ACMPEQ && (opcode == Opcodes.IF_ACMPEQ || opcode == Opcodes.IF_ACMPNE))
-                    {
+                    if (!isIgnoreAcmp && Configuration.WITH_UNBOX_ACMPEQ && (opcode == Opcodes.IF_ACMPEQ || opcode == Opcodes.IF_ACMPNE)) {
                         mv.visitMethodInsn(Opcodes.INVOKESTATIC, Type.getInternalName(TaintUtils.class), "ensureUnboxed", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
                         mv.visitInsn(SWAP);
                         mv.visitMethodInsn(Opcodes.INVOKESTATIC, Type.getInternalName(TaintUtils.class), "ensureUnboxed", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -150,8 +158,7 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                     break;
                 case Opcodes.IF_ACMPEQ:
                 case Opcodes.IF_ACMPNE:
-                    if(!isIgnoreAcmp && Configuration.WITH_UNBOX_ACMPEQ && (opcode == Opcodes.IF_ACMPEQ || opcode == Opcodes.IF_ACMPNE))
-                    {
+                    if (!isIgnoreAcmp && Configuration.WITH_UNBOX_ACMPEQ && (opcode == Opcodes.IF_ACMPEQ || opcode == Opcodes.IF_ACMPNE)) {
                         mv.visitMethodInsn(Opcodes.INVOKESTATIC, Type.getInternalName(TaintUtils.class), "ensureUnboxed", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
                         mv.visitInsn(SWAP);
                         mv.visitMethodInsn(Opcodes.INVOKESTATIC, Type.getInternalName(TaintUtils.class), "ensureUnboxed", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
@@ -170,6 +177,7 @@ public class XDataAndControlFlowTagFactory extends DataAndControlFlowTagFactory 
                 default:
                     throw new IllegalArgumentException();
             }
+
         }
     }
 

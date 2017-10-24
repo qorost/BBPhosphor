@@ -1,0 +1,19 @@
+echo "enable lightImplicit for phosphor-examples"
+enable lightImplicit for phosphor-examples
+../phosphor/Phosphor/target/jre-inst-obj/bin/java -Xbootclasspath/a:../phosphor/Phosphor/target/Phosphor-0.0.3-SNAPSHOT.jar -javaagent:../phosphor/Phosphor/target/Phosphor-0.0.3-SNAPSHOT.jar=lightImplicit -cp ../phosphor-examples/target/phosphor-examples-1.0-SNAPSHOT.jar -ea com.josecambronero.ObjectTagExamples
+DEBUG in _transform: classfile: com/josecambronero/ObjectTagExamples
+testExample1
+Taint [lbl=null  deps = [source 1 Taint [lbl=source 2  deps = []] ]]
+testExample2
+source x
+Taint [lbl=source x  deps = []]
+testExample3
+Taint [lbl=null  deps = [Source 0 Source 1 Source 2 Source 3 Source 4 Source 5 Source 6 Source 7 Source 8 Source 9 Source 10 Source 11 Source 12 Source 13 Source 14 Source 15 Source 16 Source 17 Source 18 Source 19 Source 20 Source 21 Source 22 Source 23 Source 24 Source 25 Source 26 Source 27 Source 28 Source 29 Source 30 Source 31 Source 32 ]]
+testExample4
+[x,y,w,]
+x
+y
+w
+testExample5
+Taint [lbl=null  deps = [source 1 Taint [lbl=source 2  deps = []] ]]
+Taint [lbl=null  deps = [source 1 Taint [lbl=source 2  deps = []] ]]

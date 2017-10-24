@@ -12,6 +12,12 @@ EXAMPLEJAR=../phosphor-examples/target/phosphor-examples-1.0-SNAPSHOT.jar
 
 all: implicit normal testbb
 
+PHOSPHOR: ${PHOSPHOR}
+	echo "building phosphor"
+	cd ../phosphor/Phosphor && mvn package
+
+
+
 ${BBPHOS}:
 	mvn package
 

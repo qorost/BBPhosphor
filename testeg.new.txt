@@ -1,0 +1,652 @@
+DEBUG hello from premain of BBPhosphor!
+DEBUG Input args: null
+DEBUG Configuration.with_tags_for_jumps: true
+This is the premain in phosphor
+DEBUGME before going to start Transformer
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MethodHandleImpl
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MethodHandleImpl$1
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MethodHandleImpl$2
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/util/function/Function
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MethodHandleImpl$3
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MethodHandleImpl$4
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/ClassValue
+DEBUG taintTagFactory instrumentationStarting.
+taintTagFactory instrumentation Ending.
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/ClassValue$Entry
+DEBUG taintTagFactory instrumentationStarting.
+taintTagFactory instrumentation Ending.
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/ClassValue$Identity
+DEBUG taintTagFactory instrumentationStarting.
+taintTagFactory instrumentation Ending.
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/ClassValue$Version
+DEBUG taintTagFactory instrumentationStarting.
+taintTagFactory instrumentation Ending.
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MemberName$Factory
+DEBUG taintTagFactory instrumentationStarting.
+taintTagFactory instrumentation Ending.
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MethodHandleStatics
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/lang/invoke/MethodHandleStatics$1
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/util/concurrent/atomic/AtomicBoolean
+DEBUG taintTagFactory instrumentationStarting.
+taintTagFactory instrumentation Ending.
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: edu/columbia/cs/psl/phosphor/runtime/RuntimeBoxUnboxPropogator
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: java/io/FileOutputStream$1
+DEBUG taintTagFactory instrumentationStarting.
+taintTagFactory instrumentation Ending.
+in function _transform
+DEBUG in _transform: POSTION 1: classfile: com/josecambronero/ObjectTagExamples
+DEBUG taintTagFactory instrumentationStarting.
+DEBUG_INSTRUMENT 1: TaintUtils.VERIFY_CLASS_GENERATION
+DEBUG_INSTRUMENT 2: TaintTrackingClassVisitor
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart <init>
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart identity
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample1
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample2
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample3
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample4
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample5
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart main
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart <clinit>
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG_INSTRUMENT 4: TaintTrackingClassVisitor
+DEBUG_INSTRUMENT 5: Output to debug/.class file
+edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.analysis.AnalyzerException: Error at instruction 38: First argument: expected I, but found R
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.analysis.Analyzer.analyze(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.util.CheckMethodAdapter$1.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.util.CheckMethodAdapter.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.b(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer._transform(PreMain.java:341)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform(PreMain.java:163)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform$$PHOSPHORTAGGED(PreMain.java:120)
+	at sun.instrument.TransformerManager.transform$$PHOSPHORTAGGED(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform$$PHOSPHORTAGGED(InstrumentationImpl.java:428)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass1$$PHOSPHORTAGGED(ClassLoader.java)
+	at java.lang.ClassLoader.defineClass$$PHOSPHORTAGGED(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass$$PHOSPHORTAGGED(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass$$PHOSPHORTAGGED(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass$$PHOSPHORTAGGED(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at sun.launcher.LauncherHelper.checkAndLoadMain$$PHOSPHORTAGGED(LauncherHelper.java:495)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java)
+Caused by: edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.analysis.AnalyzerException: First argument: expected I, but found R
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.analysis.BasicVerifier.binaryOperation(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.analysis.BasicVerifier.binaryOperation(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.analysis.Frame.execute(Frame.java:564)
+	... 28 more
+java.lang.RuntimeException: Error at instruction 38: First argument: expected I, but found R testExample3()V
+00000 . . . . . . . . . . . . . . . . . . . . .  :                                                                                     :    L0
+00001 . . . . . . . . . . . . . . . . . . . . .  :                                                                                     :     NEW edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag
+00002 . . . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     DUP
+00003 . . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.<init> ()V
+00004 . . . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     ASTORE 0
+00005 R . . . . . . . . . . . . . . . . . . . .  :                                                                                     :    L1
+00006 R . . . . . . . . . . . . . . . . . . . .  :                                                                                     :     LINENUMBER 47 L1
+00007 R . . . . . . . . . . . . . . . . . . . .  :                                                                                     :     BIPUSH 33
+00008 R . . . . . . . . . . . . . . . . . . . .  : I                                                                                   :     NEWARRAY T_DOUBLE
+00009 R . . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     DUP
+00010 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     NEW edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags
+00011 R . . . . . . . . . . . . . . . . . . . .  : R R R                                                                               :     DUP_X1
+00012 R . . . . . . . . . . . . . . . . . . . .  : R R R R                                                                             :     SWAP
+00013 R . . . . . . . . . . . . . . . . . . . .  : R R R R                                                                             :     INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags.<init> ([D)V
+00014 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     SWAP
+00015 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :    L2
+00016 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     ASTORE 1
+00017 R R . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     ASTORE 2
+00018 R R R . . . . . . . . . . . . . . . . . .  :                                                                                     :    L3
+00019 R R R . . . . . . . . . . . . . . . . . .  :                                                                                     :     LINENUMBER 48 L3
+00020 R R R . . . . . . . . . . . . . . . . . .  :                                                                                     :     ACONST_NULL
+00021 R R R . . . . . . . . . . . . . . . . . .  : R                                                                                   :     ICONST_0
+00022 R R R . . . . . . . . . . . . . . . . . .  : R I                                                                                 :    L4
+00023 R R R . . . . . . . . . . . . . . . . . .  : R I                                                                                 :     ISTORE 3
+00024 R R R I . . . . . . . . . . . . . . . . .  : R                                                                                   :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00025 R R R I . . . . . . . . . . . . . . . . .  : R                                                                                   :     ASTORE 4
+00026 R R R I R . . . . . . . . . . . . . . . .  :                                                                                     :    L5
+00027 R R R I R . . . . . . . . . . . . . . . .  :                                                                                     :    FRAME FULL [edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags I edu/columbia/cs/psl/phosphor/runtime/Taint] []
+00028 R R R I R . . . . . . . . . . . . . . . .  :                                                                                     :     ALOAD 4
+00029 R R R I R . . . . . . . . . . . . . . . .  : R                                                                                   :     ILOAD 3
+00030 R R R I R . . . . . . . . . . . . . . . .  : R I                                                                                 :     ALOAD 2
+00031 R R R I R . . . . . . . . . . . . . . . .  : R I R                                                                               :     ALOAD 1
+00032 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     SWAP
+00033 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     POP
+00034 R R R I R . . . . . . . . . . . . . . . .  : R I R                                                                               :     ACONST_NULL
+00035 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     CHECKCAST edu/columbia/cs/psl/phosphor/runtime/Taint
+00036 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     SWAP
+00037 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     ARRAYLENGTH
+00038 R R R I R . . . . . . . . . . . . . . . .  : R I R I                                                                             :     IF_ICMPGE L6
+00039 ?                                                                                                                                :    L7
+00040 ?                                                                                                                                :     LINENUMBER 49 L7
+00041 ?                                                                                                                                :     ALOAD 2
+00042 ?                                                                                                                                :     ALOAD 1
+00043 ?                                                                                                                                :     ILOAD 3
+00044 ?                                                                                                                                :    L8
+00045 ?                                                                                                                                :     ALOAD 4
+00046 ?                                                                                                                                :     ILOAD 3
+00047 ?                                                                                                                                :     I2F
+00048 ?                                                                                                                                :     F2D
+00049 ?                                                                                                                                :     NEW java/lang/StringBuilder
+00050 ?                                                                                                                                :     DUP
+00051 ?                                                                                                                                :     INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+00052 ?                                                                                                                                :     LDC "Source "
+00053 ?                                                                                                                                :     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+00054 ?                                                                                                                                :    L9
+00055 ?                                                                                                                                :     ALOAD 4
+00056 ?                                                                                                                                :     ILOAD 3
+00057 ?                                                                                                                                :     INVOKEVIRTUAL java/lang/StringBuilder.append$$PHOSPHORTAGGED (Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)Ljava/lang/StringBuilder;
+00058 ?                                                                                                                                :     INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+00059 ?                                                                                                                                :     ALOAD 0
+00060 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/MultiTainter.taintedDouble$$PHOSPHORTAGGED (Ledu/columbia/cs/psl/phosphor/runtime/Taint;DLjava/lang/Object;Ledu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;
+00061 ?                                                                                                                                :     DUP
+00062 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.taint : Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00063 ?                                                                                                                                :     SWAP
+00064 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.val : D
+00065 ?                                                                                                                                :     INVOKEVIRTUAL edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags.set ([DILedu/columbia/cs/psl/phosphor/runtime/Taint;D)V
+00066 ?                                                                                                                                :    L10
+00067 ?                                                                                                                                :     LINENUMBER 48 L10
+00068 ?                                                                                                                                :     IINC 3 1
+00069 ?                                                                                                                                :     GOTO L5
+00070 ?                                                                                                                                :    L6
+00071 ?                                                                                                                                :     LINENUMBER 52 L6
+00072 ?                                                                                                                                :    FRAME CHOP 2
+00073 ?                                                                                                                                :     ACONST_NULL
+00074 ?                                                                                                                                :     DCONST_0
+00075 ?                                                                                                                                :    L11
+00076 ?                                                                                                                                :     DSTORE 5
+00077 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00078 ?                                                                                                                                :     ASTORE 7
+00079 ?                                                                                                                                :    L12
+00080 ?                                                                                                                                :     LINENUMBER 53 L12
+00081 ?                                                                                                                                :     ALOAD 2
+00082 ?                                                                                                                                :     ALOAD 1
+00083 ?                                                                                                                                :    L13
+00084 ?                                                                                                                                :     ASTORE 8
+00085 ?                                                                                                                                :     ASTORE 9
+00086 ?                                                                                                                                :     ALOAD 9
+00087 ?                                                                                                                                :     ALOAD 8
+00088 ?                                                                                                                                :     SWAP
+00089 ?                                                                                                                                :     POP
+00090 ?                                                                                                                                :     ACONST_NULL
+00091 ?                                                                                                                                :     CHECKCAST edu/columbia/cs/psl/phosphor/runtime/Taint
+00092 ?                                                                                                                                :     SWAP
+00093 ?                                                                                                                                :     ARRAYLENGTH
+00094 ?                                                                                                                                :    L14
+00095 ?                                                                                                                                :     ISTORE 10
+00096 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00097 ?                                                                                                                                :     ASTORE 11
+00098 ?                                                                                                                                :     ACONST_NULL
+00099 ?                                                                                                                                :     ICONST_0
+00100 ?                                                                                                                                :    L15
+00101 ?                                                                                                                                :     ISTORE 12
+00102 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00103 ?                                                                                                                                :     ASTORE 13
+00104 ?                                                                                                                                :    L16
+00105 ?                                                                                                                                :    FRAME FULL [edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags T T D edu/columbia/cs/psl/phosphor/runtime/Taint [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags I edu/columbia/cs/psl/phosphor/runtime/Taint I edu/columbia/cs/psl/phosphor/runtime/Taint] []
+00106 ?                                                                                                                                :     ALOAD 13
+00107 ?                                                                                                                                :     ILOAD 12
+00108 ?                                                                                                                                :    L17
+00109 ?                                                                                                                                :     ALOAD 11
+00110 ?                                                                                                                                :     ILOAD 10
+00111 ?                                                                                                                                :     IF_ICMPGE L18
+00112 ?                                                                                                                                :     ALOAD 9
+00113 ?                                                                                                                                :     ALOAD 8
+00114 ?                                                                                                                                :     ILOAD 12
+00115 ?                                                                                                                                :     ALOAD 0
+00116 ?                                                                                                                                :     INVOKEVIRTUAL edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags.get ([DILedu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;
+00117 ?                                                                                                                                :     DUP
+00118 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.taint : Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00119 ?                                                                                                                                :     SWAP
+00120 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.val : D
+00121 ?                                                                                                                                :    L19
+00122 ?                                                                                                                                :     DSTORE 14
+00123 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00124 ?                                                                                                                                :     ASTORE 16
+00125 ?                                                                                                                                :    L20
+00126 ?                                                                                                                                :     LINENUMBER 54 L20
+00127 ?                                                                                                                                :     ALOAD 7
+00128 ?                                                                                                                                :     DLOAD 5
+00129 ?                                                                                                                                :    L21
+00130 ?                                                                                                                                :     ALOAD 16
+00131 ?                                                                                                                                :     DLOAD 14
+00132 ?                                                                                                                                :    L22
+00133 ?                                                                                                                                :     DSTORE 17
+00134 ?                                                                                                                                :     DUP_X2
+00135 ?                                                                                                                                :     POP
+00136 ?                                                                                                                                :    L23
+00137 ?                                                                                                                                :     DSTORE 19
+00138 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.combineTags (Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00139 ?                                                                                                                                :     DLOAD 19
+00140 ?                                                                                                                                :     DLOAD 17
+00141 ?                                                                                                                                :     DADD
+00142 ?                                                                                                                                :    L24
+00143 ?                                                                                                                                :     DSTORE 5
+00144 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00145 ?                                                                                                                                :     ASTORE 7
+00146 ?                                                                                                                                :    L25
+00147 ?                                                                                                                                :     LINENUMBER 53 L25
+00148 ?                                                                                                                                :     IINC 12 1
+00149 ?                                                                                                                                :     GOTO L16
+00150 ?                                                                                                                                :    L18
+00151 ?                                                                                                                                :     LINENUMBER 56 L18
+00152 ?                                                                                                                                :    FRAME FULL [edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags T T D edu/columbia/cs/psl/phosphor/runtime/Taint] []
+00153 ?                                                                                                                                :     ALOAD 7
+00154 ?                                                                                                                                :     DLOAD 5
+00155 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/MultiTainter.getTaint$$PHOSPHORTAGGED (Ledu/columbia/cs/psl/phosphor/runtime/Taint;D)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00156 ?                                                                                                                                :     ASTORE 8
+00157 ?                                                                                                                                :    L26
+00158 ?                                                                                                                                :     LINENUMBER 57 L26
+00159 ?                                                                                                                                :     GETSTATIC com/josecambronero/ObjectTagExamples.$assertionsDisabledPHOSPHOR_TAG : Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00160 ?                                                                                                                                :     GETSTATIC com/josecambronero/ObjectTagExamples.$assertionsDisabled : Z
+00161 ?                                                                                                                                :     IFNE L27
+00162 ?                                                                                                                                :     ALOAD 8
+00163 ?                                                                                                                                :     IFNONNULL L27
+00164 ?                                                                                                                                :     NEW java/lang/AssertionError
+00165 ?                                                                                                                                :     DUP
+00166 ?                                                                                                                                :     INVOKESPECIAL java/lang/AssertionError.<init> ()V
+00167 ?                                                                                                                                :     ATHROW
+00168 ?                                                                                                                                :    L27
+00169 ?                                                                                                                                :     LINENUMBER 58 L27
+00170 ?                                                                                                                                :    FRAME APPEND [edu/columbia/cs/psl/phosphor/runtime/Taint]
+00171 ?                                                                                                                                :     GETSTATIC java/lang/System.out : Ljava/io/PrintStream;
+00172 ?                                                                                                                                :     ALOAD 8
+00173 ?                                                                                                                                :     INVOKEVIRTUAL edu/columbia/cs/psl/phosphor/runtime/Taint.toString ()Ljava/lang/String;
+00174 ?                                                                                                                                :     INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
+00175 ?                                                                                                                                :    L28
+00176 ?                                                                                                                                :     LINENUMBER 59 L28
+00177 ?                                                                                                                                :     RETURN
+00178 ?                                                                                                                                :    L29
+
+
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.util.CheckMethodAdapter$1.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.util.CheckMethodAdapter.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.b(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer._transform(PreMain.java:341)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform(PreMain.java:163)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform$$PHOSPHORTAGGED(PreMain.java:120)
+	at sun.instrument.TransformerManager.transform$$PHOSPHORTAGGED(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform$$PHOSPHORTAGGED(InstrumentationImpl.java:428)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass1$$PHOSPHORTAGGED(ClassLoader.java)
+	at java.lang.ClassLoader.defineClass$$PHOSPHORTAGGED(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass$$PHOSPHORTAGGED(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass$$PHOSPHORTAGGED(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass$$PHOSPHORTAGGED(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at sun.launcher.LauncherHelper.checkAndLoadMain$$PHOSPHORTAGGED(LauncherHelper.java:495)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java)
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart <init>
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart identity
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample1
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample2
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample3
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample4
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart testExample5
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart main
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+DEBUG in class TaintTrackingClassVisitor, instantiate TaintPassingMV.
+In taintPassingMV, visitCode, TPMVStart <clinit>
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+In taintPassingMV visitJumpInsn 4, before call jumpOp.
+In taintPassingMV visitJumpInsn 4, after call jumpOp.
+java.lang.RuntimeException: Error at instruction 38: First argument: expected I, but found R testExample3()V
+00000 . . . . . . . . . . . . . . . . . . . . .  :                                                                                     :    L0
+00001 . . . . . . . . . . . . . . . . . . . . .  :                                                                                     :     NEW edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag
+00002 . . . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     DUP
+00003 . . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.<init> ()V
+00004 . . . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     ASTORE 0
+00005 R . . . . . . . . . . . . . . . . . . . .  :                                                                                     :    L1
+00006 R . . . . . . . . . . . . . . . . . . . .  :                                                                                     :     LINENUMBER 47 L1
+00007 R . . . . . . . . . . . . . . . . . . . .  :                                                                                     :     BIPUSH 33
+00008 R . . . . . . . . . . . . . . . . . . . .  : I                                                                                   :     NEWARRAY T_DOUBLE
+00009 R . . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     DUP
+00010 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     NEW edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags
+00011 R . . . . . . . . . . . . . . . . . . . .  : R R R                                                                               :     DUP_X1
+00012 R . . . . . . . . . . . . . . . . . . . .  : R R R R                                                                             :     SWAP
+00013 R . . . . . . . . . . . . . . . . . . . .  : R R R R                                                                             :     INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags.<init> ([D)V
+00014 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     SWAP
+00015 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :    L2
+00016 R . . . . . . . . . . . . . . . . . . . .  : R R                                                                                 :     ASTORE 1
+00017 R R . . . . . . . . . . . . . . . . . . .  : R                                                                                   :     ASTORE 2
+00018 R R R . . . . . . . . . . . . . . . . . .  :                                                                                     :    L3
+00019 R R R . . . . . . . . . . . . . . . . . .  :                                                                                     :     LINENUMBER 48 L3
+00020 R R R . . . . . . . . . . . . . . . . . .  :                                                                                     :     ACONST_NULL
+00021 R R R . . . . . . . . . . . . . . . . . .  : R                                                                                   :     ICONST_0
+00022 R R R . . . . . . . . . . . . . . . . . .  : R I                                                                                 :    L4
+00023 R R R . . . . . . . . . . . . . . . . . .  : R I                                                                                 :     ISTORE 3
+00024 R R R I . . . . . . . . . . . . . . . . .  : R                                                                                   :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00025 R R R I . . . . . . . . . . . . . . . . .  : R                                                                                   :     ASTORE 4
+00026 R R R I R . . . . . . . . . . . . . . . .  :                                                                                     :    L5
+00027 R R R I R . . . . . . . . . . . . . . . .  :                                                                                     :    FRAME FULL [edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags I edu/columbia/cs/psl/phosphor/runtime/Taint] []
+00028 R R R I R . . . . . . . . . . . . . . . .  :                                                                                     :     ALOAD 4
+00029 R R R I R . . . . . . . . . . . . . . . .  : R                                                                                   :     ILOAD 3
+00030 R R R I R . . . . . . . . . . . . . . . .  : R I                                                                                 :     ALOAD 2
+00031 R R R I R . . . . . . . . . . . . . . . .  : R I R                                                                               :     ALOAD 1
+00032 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     SWAP
+00033 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     POP
+00034 R R R I R . . . . . . . . . . . . . . . .  : R I R                                                                               :     ACONST_NULL
+00035 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     CHECKCAST edu/columbia/cs/psl/phosphor/runtime/Taint
+00036 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     SWAP
+00037 R R R I R . . . . . . . . . . . . . . . .  : R I R R                                                                             :     ARRAYLENGTH
+00038 R R R I R . . . . . . . . . . . . . . . .  : R I R I                                                                             :     IF_ICMPGE L6
+00039 ?                                                                                                                                :    L7
+00040 ?                                                                                                                                :     LINENUMBER 49 L7
+00041 ?                                                                                                                                :     ALOAD 2
+00042 ?                                                                                                                                :     ALOAD 1
+00043 ?                                                                                                                                :     ILOAD 3
+00044 ?                                                                                                                                :    L8
+00045 ?                                                                                                                                :     ALOAD 4
+00046 ?                                                                                                                                :     ILOAD 3
+00047 ?                                                                                                                                :     I2F
+00048 ?                                                                                                                                :     F2D
+00049 ?                                                                                                                                :     NEW java/lang/StringBuilder
+00050 ?                                                                                                                                :     DUP
+00051 ?                                                                                                                                :     INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+00052 ?                                                                                                                                :     LDC "Source "
+00053 ?                                                                                                                                :     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+00054 ?                                                                                                                                :    L9
+00055 ?                                                                                                                                :     ALOAD 4
+00056 ?                                                                                                                                :     ILOAD 3
+00057 ?                                                                                                                                :     INVOKEVIRTUAL java/lang/StringBuilder.append$$PHOSPHORTAGGED (Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)Ljava/lang/StringBuilder;
+00058 ?                                                                                                                                :     INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+00059 ?                                                                                                                                :     ALOAD 0
+00060 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/MultiTainter.taintedDouble$$PHOSPHORTAGGED (Ledu/columbia/cs/psl/phosphor/runtime/Taint;DLjava/lang/Object;Ledu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;
+00061 ?                                                                                                                                :     DUP
+00062 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.taint : Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00063 ?                                                                                                                                :     SWAP
+00064 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.val : D
+00065 ?                                                                                                                                :     INVOKEVIRTUAL edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags.set ([DILedu/columbia/cs/psl/phosphor/runtime/Taint;D)V
+00066 ?                                                                                                                                :    L10
+00067 ?                                                                                                                                :     LINENUMBER 48 L10
+00068 ?                                                                                                                                :     IINC 3 1
+00069 ?                                                                                                                                :     GOTO L5
+00070 ?                                                                                                                                :    L6
+00071 ?                                                                                                                                :     LINENUMBER 52 L6
+00072 ?                                                                                                                                :    FRAME CHOP 2
+00073 ?                                                                                                                                :     ACONST_NULL
+00074 ?                                                                                                                                :     DCONST_0
+00075 ?                                                                                                                                :    L11
+00076 ?                                                                                                                                :     DSTORE 5
+00077 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00078 ?                                                                                                                                :     ASTORE 7
+00079 ?                                                                                                                                :    L12
+00080 ?                                                                                                                                :     LINENUMBER 53 L12
+00081 ?                                                                                                                                :     ALOAD 2
+00082 ?                                                                                                                                :     ALOAD 1
+00083 ?                                                                                                                                :    L13
+00084 ?                                                                                                                                :     ASTORE 8
+00085 ?                                                                                                                                :     ASTORE 9
+00086 ?                                                                                                                                :     ALOAD 9
+00087 ?                                                                                                                                :     ALOAD 8
+00088 ?                                                                                                                                :     SWAP
+00089 ?                                                                                                                                :     POP
+00090 ?                                                                                                                                :     ACONST_NULL
+00091 ?                                                                                                                                :     CHECKCAST edu/columbia/cs/psl/phosphor/runtime/Taint
+00092 ?                                                                                                                                :     SWAP
+00093 ?                                                                                                                                :     ARRAYLENGTH
+00094 ?                                                                                                                                :    L14
+00095 ?                                                                                                                                :     ISTORE 10
+00096 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00097 ?                                                                                                                                :     ASTORE 11
+00098 ?                                                                                                                                :     ACONST_NULL
+00099 ?                                                                                                                                :     ICONST_0
+00100 ?                                                                                                                                :    L15
+00101 ?                                                                                                                                :     ISTORE 12
+00102 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00103 ?                                                                                                                                :     ASTORE 13
+00104 ?                                                                                                                                :    L16
+00105 ?                                                                                                                                :    FRAME FULL [edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags T T D edu/columbia/cs/psl/phosphor/runtime/Taint [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags I edu/columbia/cs/psl/phosphor/runtime/Taint I edu/columbia/cs/psl/phosphor/runtime/Taint] []
+00106 ?                                                                                                                                :     ALOAD 13
+00107 ?                                                                                                                                :     ILOAD 12
+00108 ?                                                                                                                                :    L17
+00109 ?                                                                                                                                :     ALOAD 11
+00110 ?                                                                                                                                :     ILOAD 10
+00111 ?                                                                                                                                :     IF_ICMPGE L18
+00112 ?                                                                                                                                :     ALOAD 9
+00113 ?                                                                                                                                :     ALOAD 8
+00114 ?                                                                                                                                :     ILOAD 12
+00115 ?                                                                                                                                :     ALOAD 0
+00116 ?                                                                                                                                :     INVOKEVIRTUAL edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags.get ([DILedu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag;
+00117 ?                                                                                                                                :     DUP
+00118 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.taint : Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00119 ?                                                                                                                                :     SWAP
+00120 ?                                                                                                                                :     GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag.val : D
+00121 ?                                                                                                                                :    L19
+00122 ?                                                                                                                                :     DSTORE 14
+00123 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00124 ?                                                                                                                                :     ASTORE 16
+00125 ?                                                                                                                                :    L20
+00126 ?                                                                                                                                :     LINENUMBER 54 L20
+00127 ?                                                                                                                                :     ALOAD 7
+00128 ?                                                                                                                                :     DLOAD 5
+00129 ?                                                                                                                                :    L21
+00130 ?                                                                                                                                :     ALOAD 16
+00131 ?                                                                                                                                :     DLOAD 14
+00132 ?                                                                                                                                :    L22
+00133 ?                                                                                                                                :     DSTORE 17
+00134 ?                                                                                                                                :     DUP_X2
+00135 ?                                                                                                                                :     POP
+00136 ?                                                                                                                                :    L23
+00137 ?                                                                                                                                :     DSTORE 19
+00138 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.combineTags (Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00139 ?                                                                                                                                :     DLOAD 19
+00140 ?                                                                                                                                :     DLOAD 17
+00141 ?                                                                                                                                :     DADD
+00142 ?                                                                                                                                :    L24
+00143 ?                                                                                                                                :     DSTORE 5
+00144 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Taint.copyTaint (Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00145 ?                                                                                                                                :     ASTORE 7
+00146 ?                                                                                                                                :    L25
+00147 ?                                                                                                                                :     LINENUMBER 53 L25
+00148 ?                                                                                                                                :     IINC 12 1
+00149 ?                                                                                                                                :     GOTO L16
+00150 ?                                                                                                                                :    L18
+00151 ?                                                                                                                                :     LINENUMBER 56 L18
+00152 ?                                                                                                                                :    FRAME FULL [edu/columbia/cs/psl/phosphor/struct/TaintedDoubleWithObjTag [D edu/columbia/cs/psl/phosphor/struct/LazyDoubleArrayObjTags T T D edu/columbia/cs/psl/phosphor/runtime/Taint] []
+00153 ?                                                                                                                                :     ALOAD 7
+00154 ?                                                                                                                                :     DLOAD 5
+00155 ?                                                                                                                                :     INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/MultiTainter.getTaint$$PHOSPHORTAGGED (Ledu/columbia/cs/psl/phosphor/runtime/Taint;D)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00156 ?                                                                                                                                :     ASTORE 8
+00157 ?                                                                                                                                :    L26
+00158 ?                                                                                                                                :     LINENUMBER 57 L26
+00159 ?                                                                                                                                :     GETSTATIC com/josecambronero/ObjectTagExamples.$assertionsDisabledPHOSPHOR_TAG : Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+00160 ?                                                                                                                                :     GETSTATIC com/josecambronero/ObjectTagExamples.$assertionsDisabled : Z
+00161 ?                                                                                                                                :     IFNE L27
+00162 ?                                                                                                                                :     ALOAD 8
+00163 ?                                                                                                                                :     IFNONNULL L27
+00164 ?                                                                                                                                :     NEW java/lang/AssertionError
+00165 ?                                                                                                                                :     DUP
+00166 ?                                                                                                                                :     INVOKESPECIAL java/lang/AssertionError.<init> ()V
+00167 ?                                                                                                                                :     ATHROW
+00168 ?                                                                                                                                :    L27
+00169 ?                                                                                                                                :     LINENUMBER 58 L27
+00170 ?                                                                                                                                :    FRAME APPEND [edu/columbia/cs/psl/phosphor/runtime/Taint]
+00171 ?                                                                                                                                :     GETSTATIC java/lang/System.out : Ljava/io/PrintStream;
+00172 ?                                                                                                                                :     ALOAD 8
+00173 ?                                                                                                                                :     INVOKEVIRTUAL edu/columbia/cs/psl/phosphor/runtime/Taint.toString ()Ljava/lang/String;
+00174 ?                                                                                                                                :     INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
+00175 ?                                                                                                                                :    L28
+00176 ?                                                                                                                                :     LINENUMBER 59 L28
+00177 ?                                                                                                                                :     RETURN
+00178 ?                                                                                                                                :    L29
+
+
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.util.CheckMethodAdapter$1.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.util.CheckMethodAdapter.visitEnd(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.b(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer._transform(PreMain.java:341)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform(PreMain.java:163)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform$$PHOSPHORTAGGED(PreMain.java:120)
+	at sun.instrument.TransformerManager.transform$$PHOSPHORTAGGED(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform$$PHOSPHORTAGGED(InstrumentationImpl.java:428)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass1$$PHOSPHORTAGGED(ClassLoader.java)
+	at java.lang.ClassLoader.defineClass$$PHOSPHORTAGGED(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass$$PHOSPHORTAGGED(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass$$PHOSPHORTAGGED(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass$$PHOSPHORTAGGED(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at sun.launcher.LauncherHelper.checkAndLoadMain$$PHOSPHORTAGGED(LauncherHelper.java:495)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java)
+method so far:
+Saving com/josecambronero/ObjectTagExamples

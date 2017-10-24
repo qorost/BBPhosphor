@@ -24,11 +24,14 @@ public class PreMain {
         DebugME("hello from premain of BBPhosphor!");
         DebugME("Input args: " + args);
 
-        Configuration.WITH_TAGS_FOR_JUMPS = true;
+        //Configuration.WITH_TAGS_FOR_JUMPS = true;
+        Configuration.IMPLICIT_LIGHT_TRACKING = true;
         DebugME("Configuration.with_tags_for_jumps: " + Configuration.WITH_TAGS_FOR_JUMPS);
 
 
-        Configuration.taintTagFactory = new DataAndControlFlowTagFactory();
+        Configuration.taintTagFactory = new XDataAndControlFlowTagFactory();
         edu.columbia.cs.psl.phosphor.PreMain.premain(args, inst);
+        DebugME("Finished with Configuration.with_tags_for_jumps: " + Configuration.WITH_TAGS_FOR_JUMPS);
+
     }
 }

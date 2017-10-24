@@ -30,7 +30,6 @@ public class Test
 
     public static void test_tt() {
     
-        TT t1 = new TT(1,2);
 
     }
     
@@ -48,6 +47,7 @@ public class Test
     }
 
     public static void main(String[] args) {
+        //TT t1 = new TT(1,2);
     
         Test test = new Test(1,2);
         int y = test.add();
